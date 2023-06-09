@@ -1,0 +1,30 @@
+# Xamarin.Android Ignore
+
+## Build artifacts
+bin/
+obj/
+
+## Package files
+*.apk
+*.aab
+*.msi
+*.nupkg
+*.zip
+
+## IDE and editor files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+*.userprefs
+*.csproj.user
+*.suo
+*.user
+*.sln.docstates
+
+## NuGet packages
+packages/
+
+## Miscellaneous
+*.log
+*.bak

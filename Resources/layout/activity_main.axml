@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+    <EditText
+            android:id="@+id/incomePerHourEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="Income Per Hour"
+            android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/workHourPerDayEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/incomePerHourEntry"
+            android:hint="Work Hour Per Day"
+            android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/taxRateEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/workHourPerDayEntry"
+            android:hint="Tax Rate"
+            android:minHeight="48dp"/>
+
+    <EditText
+            android:id="@+id/savingsRateEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taxRateEntry"
+            android:hint="Savings Rate"
+            android:minHeight="48dp"/>
+
+    <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/savingsRateEntry"
+            android:text="CLEAR"
+            android:minHeight="48dp"/>
+
+    <TextView
+            android:id="@+id/annualWorkHourSummaryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clearButton"
+            android:minHeight="48dp"/>
+
+    <TextView
+            android:id="@+id/annualIncomeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/annualWorkHourSummaryLabel"
+            android:minHeight="48dp"/>
+
+    <TextView
+            android:id="@+id/taxPayableLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/annualIncomeLabel"
+            android:minHeight="48dp"/>
+
+    <TextView
+            android:id="@+id/annualSavingsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taxPayableLabel"
+            android:minHeight="48dp"/>
+
+    <TextView
+            android:id="@+id/spendableIncomeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/annualSavingsLabel"
+            android:minHeight="48dp"/>
+
+</RelativeLayout>
